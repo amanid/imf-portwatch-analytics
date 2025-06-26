@@ -1,0 +1,101 @@
+/* ---------- GLOBAL STYLES ---------- */
+body {
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ---------- HEADER ---------- */
+h1 {
+    color: #003366;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* ---------- KPI BOXES / CARDS ---------- */
+.card, .dbc-card {
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* ---------- DROPDOWNS & CONTROLS ---------- */
+.Select-control, .dash-dropdown, .DateRangePickerInput {
+    border-radius: 8px !important;
+    border-color: #cccccc !important;
+    box-shadow: none !important;
+    font-size: 14px;
+}
+
+.Select--single > .Select-control .Select-value {
+    padding-left: 10px;
+}
+
+/* ---------- GRAPHS ---------- */
+.js-plotly-plot {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* ---------- TABLES ---------- */
+.dash-table-container .dash-spreadsheet-container {
+    font-size: 14px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dash-table-container .dash-header {
+    background-color: #003366;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.dash-table-container .dash-cell {
+    padding: 8px;
+}
+
+/* ---------- BUTTONS ---------- */
+button, .dash-button {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #00539c;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (max-width: 768px) {
+    .card, .dbc-card {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
